@@ -22,23 +22,23 @@ $$
 
 ![](https://miro.medium.com/max/1720/1*G1Y_-X14q2xMVHlUuaUUdA.png =500x)
 
-위 그림은 1개의 regressor가 존재할 때 이것과 regressand를 그대로 2차원 평면에 관찰 수만큼 찍은 것이다. 첫번째 그림에서 "Observed Y"는 $n$ 개의 regressand를 모두 포괄한다. $\mathbf{Y}$는 $(n \times 1)$ 벡터, 즉 $n$ 차원 벡터다. 이 벡터 하나가 회귀식 좌변의 관찰값 전체를 나타낸다. 
+위 그림은 1개의 regressor가 존재할 때 이것과 regressand를 그대로 2차원 평면에 관찰 수만큼 찍은 것이다. 첫번째 그림에서 "Observed Y"는 $n$ 개의 regressand를 모두 포괄한다. $\mathbf{Y}$는 $(n \times 1)$ 벡터, 즉 $n$ 차원 벡터다. 이 벡터 하나가 회귀식 좌변의 관찰값 전체를 나타낸표현한다. 
 
 이제 선형대수의 세계로 들어가보자. $\mathbf X$의 열(column)이 각각 $n$ 개의 관찰 값을 지닌 regressor에 해당한다. 이 각각의 컬럼은 $(n \times 1)$ 벡터이다. 이 벡터 $k$ 개가 생성할 수 있는 공간이 $\mathbf X$의 컬럼 스페이스다(앞으로 col $\mathbf X$로 표기하자). 
 
-col $\mathbf X$를 통해 생성되는 공간의 최대 차원, 즉 $\mathbf X$의 랭크는 무엇일까? 회귀분석에서는 대체로 $n > k$가 일반적이고 이런 상황에서 $\mathbf X$의 랭크는 $k$를 넘을 수 없다. 다시 말하면, $\mathbf X$가 생성하는(span)하는 컬럼 스페이스의 차원은 $k$를 넘을 수 없다. 
+col $\mathbf X$를 통해ath는 공간의 최대 차원, 즉 $\mathbf X$의 랭크는 무엇일까? 회귀분석에서는 대체로 $n > k$가 일반적이고 이런 상황에서 $\mathbf X$의 랭크는 $k$를 넘을 수 없다. 다시 말하면, $\mathbf X$가 생성하는(span)하는 컬럼 스페이스의 차원은 $k$를 넘을 수 없다. 
 
-그림에서 색칠된 평면이 $\mathbf X$가 생성하는 컬럼 스페이스, 즉 col $\mathbf X$를 표현하고 있다. 앞서 보았듯이 $\mathbf Y$는 $n$ 차원 벡터다. 몹시 특별한 경우가 아니라면 $\mathbf Y$ 벡터가 col $\mathbf X$에 속할 가능성은 없다. 만일 속해 있다면 회귀분석이 필요 없을 것이다. col $\mathbf X$를 통해서 $\mathbf Y$를 완벽하게 예측할 수 있는데 무슨 걱정이 있겠는가? 대체로 우리가 마주하는 상황은 $n$ 차원 벡터를 $k$ 차원 공간에 끼워 넣기 힘든 상황이다. 
+그림에서 색칠된 평면이 $\mathbf X$가 생성하는 컬럼 스페이스, 즉 col $\mathbf X$를 표현하고 있다. 앞서 보았듯이 $\mathbf Y$는 $n$ 차원 벡터다. 몹시 특별한 경우가 아니라면 $\mathbf Y$ 벡터가 col $\mathbf X$에 속할 가능성은 없다. 다면 회귀분석할 필도 없을 것이다. col $\mathbf X$를 통해서 $\mathbf Y$를 완벽하게 예측할 수 있는데 무슨 걱정이 있겠는가? 대체로 우리가 마주하는 상황은 $n$ 차원 벡터를 $k$ 차원 공간에 끼워 넣기 힘든 상황이다. 
 
-회귀분석의 목표는 regressor를 통해서 regressand를 '가장' 잘 설명하는 것이다. 이를 기하를 통해 풀어보자. 회귀분석이란 regressand와 '닮은' 것을 col $\mathbf X$에서 찾는 것이다. 즉 $\mathbf Y$와 닮은 무엇을 $\mathbf X$의 컬럼 스페이스에 찾아야 한다. 직관적으로 쉽게 떠올릴 수 있는 것은 이 평면과 $\mathbf Y$의 (유클리드) 거리를 가장 짧게 만들어주는 벡터일 것이다. 그리고 이 최단거리는 $\mathbf Y$에서 $\mathbf X$ 컬럼 스페이스로 내린 수선의 발이 닿는 col $\mathbf X$의 지점이다. col $\mathbf X$ 내에 있는 수선의 발 벡터를 찾는 연산자(operator)가 회귀분석 계수 $\hat{\bm \beta}$이다. 즉, 
+회귀분석의 목표는 regressor를 통해서 regressand를 '가장' 잘 설명하는 것이다. 이를 기하를 통해 풀어보자. 회귀분석이란 regressand와 '닮은' 것 col $\mathbf X$에서 찾는 것이다. 즉 $\mathbf Y$와 닮은 무엇을 $\mathbf X$의 컬럼 스페이스에 찾아야 한다. 직관적으로 쉽게 떠올릴 수 있는 것은 이 평면과 $\mathbf Y$의 (유클리드) 거리를 가장 짧게 만들어주는 벡터일 것이다. 그리고 이 최단거리는 $\mathbf Y$에서 $\mathbf X$ 컬럼 스페이스로 내린 수선의 발이 닿는 col $\mathbf X$의 지점이다. col $\mathbf X$ 내에 있는 수선의 발 벡터를 찾는 연산자(operator)가 회귀분석 계수 $\hat{\bm \beta}$이다. 즉, 
 
 $$
 \hat{\bm \beta} = ({\mathbf X}'{\mathbf X})^{-1} ({\mathbf X}' \mathbf Y)
 $$
 
-그리고 이 연산자를 regressor의  모음인 col $\mathbf X$에 적용하면 regressand $\mathbf Y$의 예측치 $\hat{\mathbf Y}$이 계산된다. 그림에서 보듯이 $\hat{\mathbf Y}$은 $\mathbf Y$와 $\mathbf X$의 컬럼 스페이스의 거리를 최소화하는 위치에 존재한다. $\hat{\mathbf Y}$는 어떤 벡터일까? $(n \times 1)$ 벡터지만   col $\mathbf X$ 내에 위치하고 있다. 
+그리고 이 연산자를 reggressor의  모음인 coland $\mathbf XY$에 적용하면 regred $\mathbf $의  $\hat{\mathbf Y}$이 계산된다. 그림에서 보듯이 $\hat{\mathbf Y}$은 $\mathbf Y$와 $\mathbf X$의 컬럼 스페이스의 거리를 최소화하는 위치에 존재한다. $\hat{\mathbf Y}$는 어떤 벡터일까? $(n \times 1)$ 벡터지만   col $\mathbf X$ 내에 위치하고 있다. 
 
-이제 이 그림을 머리에 넣고서 $\mathrm R^2$의 의미를 살펴보자. 결론부터 이야기하면  $\mathrm R^2$는 그림에서 $(\mathbf Y - \overline{\mathbf Y})$ 벡터와 $(\hat{\mathbf Y}-\overline{\mathbf Y})$ 벡터가 이루는 각의 코사인 값, 즉 $\cos \theta$다. $\overline{\mathbf Y}$는 무엇일까? 그림에서처럼 $\overline{Y} \mathbf{1}_n$로 표기할 수 있다. 즉, $\mathbf Y$의 평균값 $\overline{Y}$만으로 구성된 $(n \times 1)$ 벡터다. 이 벡터는 col $\mathbf X$ 안에 있을까? 당연히 그렇다. $\mathbf X$는 최대한 $k(<n)$ 차원의 벡터이고, $\overline{\mathbf Y}$는 1차원 벡터다. 다시 본론으로 돌아가자. 이 코사인 값의 의미는 무엇일까? 
+이제 이 그림을 머리에 넣고서 $\mathrm R^2$의 의미를 살펴보자. 결론부터 이야기하면  $\mathrm R^2$는 그림에서 $(\mathbf Y - \overline{\mathbf Y})$ 벡터와 $(\hat{\mathbf Y}-\overline{\mathbf Y})$ 벡터가 이루는 각의 코사인 값, 즉 $\cos \theta$다. $\overline{\mathbf Y}$는 무엇일까? 그림에서처럼 $\overline{Y} \mathbf{1}_n$로 표기할 수 있다. $\mathbf Y$의 평균값 $\overline{Y}$만으로 구성된 $(n \times 1)$ 벡터다. 이 벡터는 col $\mathbf X$ 안에 있을까? 당연히 그렇다. $\mathbf X$는 최대한 $k(<n)$ 차원의 벡터이고, $\overline{\mathbf Y}$는 1차원 벡터다. 다시 본론으로 돌아가자. 이 코사인 값의 의미는 무엇일까? 
 
 그림에서 보듯이 세 개의 벡터가 직각삼각형을 이루고 있으므로 아래의 식이 성립한다. 
 
@@ -60,7 +60,7 @@ $$
   {\mathrm R}^2 = 1 - \dfrac{\text{RSS}}{\text{TSS}}
 $$
 
-$\textrm R^2$는 가끔 회귀분석의 성과 지표로 남용되는 경우가 있다. 이렇게 기하학적으로 보면 col $\mathbf X$ 내에 표현된 $\hat{\mathbf Y}$ 가 $\mathbf Y$와 얼마나 가깝게 있는지를 $\overline{\mathbf Y}$를 기준으로 지표화한 것에 불과하다. 
+사실 $\textrm R^2$는 가끔 회귀분석의 성과 지표로 남용되는 경우가 있다. 이렇게 기하학적으로 보면 col $\mathbf X$ 내에 표현된 $\hat{\mathbf Y}$ 가 $\mathbf Y$와 얼마나 가깝게 있는지를 $\overline{\mathbf Y}$를 기준으로 지표화한 것에 불과하다. 
 
 ${\mathrm R}^2$는 회귀분석의 성과 지표로 어떤 의미가 있을까? 분석의 목표가 회귀분석을 통한 예측이라면, 즉 원래 관찰값과 예측된 값이 얼마나 떨어져 있는지 여부가 중요하다면 $\textrm R^2$는 의미를 지닐 수 있다. 반면, 분석의 목표가 회귀분석을 통한 이러한 종류의 예측이 아니라 특정한 regressor의 인과관계에 관한 추정이라면, $\textrm R^2$는 거의 무시해도 좋다. 
 
@@ -70,5 +70,5 @@ ${\mathrm R}^2$는 회귀분석의 성과 지표로 어떤 의미가 있을까? 
 
 Jun Sok Huhh | :house:[lostineconomics.com](http://lostineconomics.com)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDU0Mzg5MThdfQ==
+eyJoaXN0b3J5IjpbNzg1MTcwMTM1LC0xMDQ1NDM4OTE4XX0=
 -->
