@@ -10,6 +10,11 @@ also posted in [NCSOFT-DANBI](https://danbi-ncsoft.github.io/studyetc/2019/10/28
 
 ![](https://i.stack.imgur.com/rDYMh.png =500x)
 
+tl;dr 
+
+- 회귀분석을 선형 대수를 통해서 이해하면 새로운 깨달음을 얻을 수 있어. 
+- 회귀분석이라는 것은 PCA와 마찬가지로 차원을 축소하는 방법이지. $n$ 개의 관찰을 지닌 어떤 대상을 이보다 낮은 $k(<n)$의 변수로 
+
 여기서 회귀분석을 해설할 생각은 없다. 이미 너무나 많은 그리고 매우 훌륭한 내용들이 책, 웹, 강의로 넘쳐날테니까. 이 글의 용도는 그림 하나로 지나치기 쉬운 회귀분석의 '핵심'을 살피는 것이다. [crossvalidated](https://stats.stackexchange.com/questions/123651/geometric-interpretation-of-multiple-correlation-coefficient-r-and-coefficient)에서 이 그림을 보는 순간 일종의 '돈오돈수'가 강림했다. (이렇게 이해하면 쉬웠을 것을...) 먼저 우리에게 익숙한 회귀분석 모델을 매트릭스로 적어보자. 
 
 $$
@@ -70,5 +75,6 @@ ${\mathrm R}^2$는 회귀분석의 성과 지표로 어떤 의미가 있을까? 
 
 Jun Sok Huhh | :house:[lostineconomics.com](http://lostineconomics.com)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg1MTcwMTM1LC0xMDQ1NDM4OTE4XX0=
+eyJoaXN0b3J5IjpbLTE4MzQ1ODYwMDgsNzg1MTcwMTM1LC0xMD
+Q1NDM4OTE4XX0=
 -->
