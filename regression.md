@@ -8,7 +8,10 @@
 Jun Sok Huhh | :house:[lostineconomics.com](http://lostineconomics.com)
 also posted in [NCSOFT-DANBI](https://danbi-ncsoft.github.io/studyetc/2019/10/28/understanding_regression.html)
 
-![](https://i.stack.imgur.com/rDYMh.png =500x)
+
+<p align="center"><kbd>
+  <img src="https://i.stack.imgur.com/rDYMh.png" width="450">
+</kbd></p>
 
 # tl;dr 
 
@@ -29,6 +32,9 @@ $$
 [^1]: 흔히 $\mathbf Y$를 종속변수, $\mathbf X$를 독립변수로 부르기도 한다. 하지만 이러한 이름에는 혼란의 여지가 있다. 여기서는 regressor, regressand라는 영어 표현을 그대로 쓰도록 하겠다. 
 
 ![](https://miro.medium.com/max/1720/1*G1Y_-X14q2xMVHlUuaUUdA.png =500x)
+<p align="center"><kbd>
+  <img src="https://miro.medium.com/max/1720/1*G1Y_-X14q2xMVHlUuaUUdA.png" width="450">
+</kbd></p>
 
 위 그림은 1개의 regressor가 존재할 때 이것과 regressand를 그대로 2차원 평면에 관찰 수만큼 찍은 것이다. 첫번째 그림에서 "Observed Y"는 $n$ 개의 regressand를 모두 포괄한다. $\mathbf{Y}$는 $(n \times 1)$ 벡터, 즉 $n$ 차원 벡터다. 이 벡터 하나가 회귀식 좌변의 관찰값 전체를 나타낸표현한다. 
 
@@ -78,6 +84,6 @@ ${\mathrm R}^2$는 회귀분석의 성과 지표로 어떤 의미가 있을까? 
 
 Jun Sok Huhh | :house:[lostineconomics.com](http://lostineconomics.com)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMzU5NDgyNCw3ODUxNzAxMzUsLTEwND
-U0Mzg5MThdfQ==
+eyJoaXN0b3J5IjpbLTEwMzIzNzA2NDUsMTMzMzU5NDgyNCw3OD
+UxNzAxMzUsLTEwNDU0Mzg5MThdfQ==
 -->
