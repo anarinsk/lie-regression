@@ -81,8 +81,32 @@ ${\mathrm R}^2$는 회귀분석의 성과 지표로 어떤 의미가 있을까? 
 
 [^2]: 궁여지책으로 이와 유사한 지표를 만들어낼 수는 있겠다. [여기](https://thestatsgeek.com/2014/02/08/r-squared-in-logistic-regression)를 참고하라. 
 
+# 덤: 회귀 분석과 PCA는 서로 얼마나 다를까?
+
+회귀 분석과 PCA는 어떻게 다른가? 여러가지 답이 있을 수 있다. 그걸 다 소개하겠다는 게 아니다. 둘이 데이터 모델링의 시야에서 어떻게 다른지를 살펴보는 게 이 글의 목적이다. 이 글은 둘을 어떻게 실행하는지를 다루지 않는다. 앞선 두 개의 포스팅을 읽고 오시면 이해에 도움이 될 것이다. 
+
+## 공통점 
+
+### Feature-something 
+
+일단 둘 다 $k$ 개의 feature 비슷한 것을 지닌다. 그리고 $n$ 개의 데이터 포인트가 제시된다. 
+
+### Smaller-something 
+
+흔히 PCA를 차원축소의 방법으로 이해하는데, 이 말은 맞다. 반대로 회귀분석은 이와 다르다고 이해하는 경우가 많은데 이 말은 틀리다. 회귀 분석도 어떻게 보면 '차원 축소'다. 회귀 분석에서 target 변수는 $n$ 차원 공간 위의 주어진 한 점이다. 우리의 목표는 이 한 점을 잘 설명하는 더 낮은 차원의 어떤 지점을 찾는 것이다. 이런 점에서 본다면 회귀 분석 역시 차원 축소의 한 방법이라고 봐야 할 것이다. 
+
+### Minimization-something 
+
+PCA에서 '분산 최대화'에 이르기까지 과정을 생략하다보면, PCA를 별도의 어떤 방법으로 인식하곤 한다. 그런데 앞선 포스팅에서 보았듯이 '분산 최대화'란 사실 피처 벡터와 이를 예측하기 위한 어떤 벡터 사이의 거리를 최소화하는 과정에서 도출된 결과다. 이런 점에서 본다면, 회귀 분석이든 PCA는 RSS, 즉 잔차제곱합(Residual Sum of Squares)을 최소화한다는 점에서는 목적 함수의 유형은 동일하다. 
+
+## 차이점 
+
+### Supervised or Unsupervised? 
+
+회귀 분석과 PCA를 지도 학습(supervised learning), 비지도 학습(unsupervised learning)으로 구분할 수는 없다. 다만 이 구분과 어느 정도 비슷한 부분이 있다. 회귀  분석은 target이 있다. 이 타겟과의 거리를 최소화하는 feature 공간의 어떤 위치를 찾는 것이 목적이다. 반면, PCA에는 target이 없다. $k$ 개의 feature를 최소 거리로 투영할 수 있는 스크린 벡터를 찾는게 목적이다. 간단히 말해서 PCA는 target 없이 벡터의 거리가 1인 임의의 프로젝션 벡터를 찾는 것이 목적이다. 
+
 Jun Sok Huhh | :house:[lostineconomics.com](http://lostineconomics.com)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4NzM0NTExNCwxMzMzNTk0ODI0LDc4NT
-E3MDEzNSwtMTA0NTQzODkxOF19
+eyJoaXN0b3J5IjpbMTY2ODY1Mzk2MCwtODg3MzQ1MTE0LDEzMz
+M1OTQ4MjQsNzg1MTcwMTM1LC0xMDQ1NDM4OTE4XX0=
 -->
