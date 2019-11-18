@@ -83,7 +83,7 @@ ${\mathrm R}^2$는 회귀분석의 성과 지표로 어떤 의미가 있을까? 
 
 # 덤: 회귀 분석과 PCA는 서로 얼마나 다를까?
 
-회귀 분석과 PCA는 어떻게 다른가? 여러가지 답이 있을 수 있다. 그걸 다 소개하겠다는 게 아니다. 둘이 데이터 모델링의 시야에서 어떻게 다른지를 살펴보는 게 이 글의 목적이다. 이 글은 둘을 어떻게 실행하는지를 다루지 않는다. 앞선 두 개의 포스팅을 읽고 오시면 이해에 도움이 될 것이다. 
+회귀 분석과 PCA는 어떻게 다른가? 여러가지 답이 있을 수 있다. 그걸 다 소개하겠다는 게 아니다. 둘이 데이터 모델링의 시야에서 어떻게 다른지를 살펴보는 게 이 글의 목적이다. 이 글은 둘을 어떻게 실행하는지를 다루지 않는다. 앞선 PCA 관련 [포스팅](https://anarinsk.github.io/lie-math_pca/)을 읽고 오시면 이해에 도움이 될 것이다. 
 
 ## 공통점 
 
@@ -107,6 +107,6 @@ PCA에서 '분산 최대화'에 이르기까지 과정을 생략하다보면, PC
 
 Jun Sok Huhh | :house:[lostineconomics.com](http://lostineconomics.com)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2ODY1Mzk2MCwtODg3MzQ1MTE0LDEzMz
-M1OTQ4MjQsNzg1MTcwMTM1LC0xMDQ1NDM4OTE4XX0=
+eyJoaXN0b3J5IjpbLTExMzEwODU1NjQsLTg4NzM0NTExNCwxMz
+MzNTk0ODI0LDc4NTE3MDEzNSwtMTA0NTQzODkxOF19
 -->
