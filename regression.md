@@ -17,7 +17,7 @@ also posted in [NCSOFT-DANBI](https://danbi-ncsoft.github.io/studyetc/2019/10/28
 
 - 회귀분석을 선형 대수를 통해서 이해하면 새로운 깨달음을 얻을 수 있어. 
 - 회귀분석이라는 것은 PCA와 마찬가지로 차원을 축소하는 방법이지. $n$ 개의 관찰을 지닌 어떤 대상을 이보다 낮은 $k(<n)$의 변수로 요약하는 것이야. 
-- 선형대수로 보면 $\mathrm R^2$은 피타고라스 정리의 흔한 응용 사례에 불과해. 
+- 선형대수로 보면 $\boldsymbol R^2$은 피타고라스 정리의 흔한 응용 사례에 불과해. 
 
 # 공간에서 바라본 회귀분석 
 
@@ -51,7 +51,7 @@ $$
 
 그리고 이 연산자를 reggressor의  모음인 coland $\mathbf XY$에 적용하면 regred $\mathbf $의  $\hat{\mathbf Y}$이 계산된다. 그림에서 보듯이 $\hat{\mathbf Y}$은 $\mathbf Y$와 $\mathbf X$의 컬럼 스페이스의 거리를 최소화하는 위치에 존재한다. $\hat{\mathbf Y}$는 어떤 벡터일까? $(n \times 1)$ 벡터지만   col $\mathbf X$ 내에 위치하고 있다. 
 
-이제 이 그림을 머리에 넣고서 $\mathrm R^2$의 의미를 살펴보자. 결론부터 이야기하면  $\mathrm R^2$는 그림에서 $(\mathbf Y - \overline{\mathbf Y})$ 벡터와 $(\hat{\mathbf Y}-\overline{\mathbf Y})$ 벡터가 이루는 각의 코사인 값, 즉 $\cos \theta$다. $\overline{\mathbf Y}$는 무엇일까? 그림에서처럼 $\overline{Y} \mathbf{1}_n$로 표기할 수 있다. $\mathbf Y$의 평균값 $\overline{Y}$만으로 구성된 $(n \times 1)$ 벡터다. 이 벡터는 col $\mathbf X$ 안에 있을까? 당연히 그렇다. $\mathbf X$는 최대한 $k(<n)$ 차원의 벡터이고, $\overline{\mathbf Y}$는 1차원 벡터다. 다시 본론으로 돌아가자. 이 코사인 값의 의미는 무엇일까? 
+이제 이 그림을 머리에 넣고서 $\boldsymbol R^2$의 의미를 살펴보자. 결론부터 이야기하면  $\boldsymbol R^2$는 그림에서 $(\mathbf Y - \overline{\mathbf Y})$ 벡터와 $(\hat{\mathbf Y}-\overline{\mathbf Y})$ 벡터가 이루는 각의 코사인 값, 즉 $\cos \theta$다. $\overline{\mathbf Y}$는 무엇일까? 그림에서처럼 $\overline{Y} \mathbf{1}_n$로 표기할 수 있다. $\mathbf Y$의 평균값 $\overline{Y}$만으로 구성된 $(n \times 1)$ 벡터다. 이 벡터는 col $\mathbf X$ 안에 있을까? 당연히 그렇다. $\mathbf X$는 최대한 $k(<n)$ 차원의 벡터이고, $\overline{\mathbf Y}$는 1차원 벡터다. 다시 본론으로 돌아가자. 이 코사인 값의 의미는 무엇일까? 
 
 그림에서 보듯이 세 개의 벡터가 직각삼각형을 이루고 있으므로 아래의 식이 성립한다. 
 
