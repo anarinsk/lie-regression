@@ -19,7 +19,7 @@ also posted in [NCSOFT-DANBI](https://danbi-ncsoft.github.io/studyetc/2019/10/28
 
 회귀분석이라는 것은 PCA와 마찬가지로 차원을 축소하는 방법이지. $n$ 개의 관찰을 지닌 어떤 대상을 이보다 낮은 $k(<n)$의 변수로 요약하는 것이야. 
 
-선형대수로 보면 $\boldsymbol R^2$은 피타고라스 정리의 흔한 응용 사례에 불과해. 
+선형대수로 보면 $\mathrm R^2$은 피타고라스 정리의 흔한 응용 사례에 불과해. 
 
 # 공간에서 바라본 회귀분석 
 
